@@ -270,6 +270,11 @@ code {
   padding: 0.5rem 1rem;
 }
 
+.check-out-btn:hover {
+  scale: 105%;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(87, 87, 87, 0.364);
+}
+
 .loading {
   backdrop-filter: blur(1);
   width: 100%;
@@ -277,8 +282,9 @@ code {
 }
 
 .price-msg {
+  cursor: pointer;
   position: fixed;
-  background: white;
+  background: rgb(231, 231, 231);
   font-family: raleway;
   top: 50%;
   left: 50%;
@@ -294,6 +300,23 @@ code {
 
   display: flex;
   flex-direction: column;
+}
+
+.remove-btn {
+  background: rgb(233, 104, 87);
+  color: white;
+  width: fit-content;
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: raleway, sans-serif;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  scale: 105%;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(87, 87, 87, 0.364);
 }
 
 .error-page-msg {

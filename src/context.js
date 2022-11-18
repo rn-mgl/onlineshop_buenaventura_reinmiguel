@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = React.useState(false);
   const [products, setProducts] = React.useState([]);
   const [cart, setCart] = React.useState([]);
+
   const [price, setPrice] = React.useState(0);
 
   const fetchProducts = React.useCallback(async () => {

@@ -19,6 +19,15 @@ export default function Cart() {
   return (
     <div className="cart-wrapper">
       <div className="check-out">Items : {cart.length}</div>
+      <div
+        onClick={() => {
+          setCart([]);
+          setPrice(0);
+        }}
+        className="remove-btn"
+      >
+        Remove All
+      </div>
       <div className="cart-body">
         <div>
           {cart.map((id, index) => {
@@ -39,7 +48,9 @@ export default function Cart() {
         <div onClick={handleCheckOut} className="check-out-btn">
           Check Out
         </div>
-        <div className={`${checked && "price-msg"}`}>Total : P {price}.00</div>
+        <div onClick={handleCheckOut} className={`${checked && "price-msg"}`}>
+          Total : P {price}.00
+        </div>
       </div>
     </div>
   );
