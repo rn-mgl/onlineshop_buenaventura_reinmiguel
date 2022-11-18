@@ -287,3 +287,33 @@ code {
   box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.144);
   border-radius: 0.5rem;
 }
+
+.error-page {
+  background: var(--white-gradient);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.error-page-msg {
+  padding: 1rem 2rem;
+
+  font-family: var(--headers);
+  font-size: 9rem;
+  background-image: var(--grey-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: var(--drop-shadow);
+}
+
+.home-btn-error-page {
+  padding: 1rem 2rem;
+
+  text-decoration: none;
+
+  font-size: 3rem;
+  font-family: var(--body-text);
+  font-weight: 600;
+  color: var(--main-red);
+}
