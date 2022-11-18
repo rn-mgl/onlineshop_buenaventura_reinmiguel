@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.nav-text {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.all-products {
+  width: 80vw;
+  margin: 5rem auto;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+
+.product-card {
+  text-decoration: none;
+  color: black;
+  transition: 150ms ease-in-out;
+  border-radius: 0.5rem;
+  font-family: Montserrat, sans-serif;
+}
+
+.product-card:hover {
+  color: darkcyan;
+  scale: 105%;
+  box-shadow: 0 0.125rem 0.25rem rgba(black, 0.075);
+}
+
+.product-image {
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image-container {
+  padding: 2rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 9rem;
+}
+
+.category {
+  font-weight: 300;
+}
+
+.price-rating {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+}
+
+.product-price {
+  margin-right: auto;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-count {
+  color: rgb(200, 105, 105);
+}
+
+.back-link {
+  color: black;
+  margin-top: 3rem;
+}
+
+.back-link:hover {
+  color: darkcyan;
+}
+
+.single-container {
+  width: 80vw;
+  margin: 0rem auto;
+}
+
+.single-wrapper {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.single-img-container {
+  width: 50%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.single-img {
+  width: 25rem;
+}
+
+.single-product-details {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-items: start;
+  flex-direction: column;
+  gap: 3rem;
+
+  text-align: right;
+  font-family: Montserrat, sans-serif;
+}
+
+.product-name {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.single-product-price {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: darkcyan;
+}
+
+.product-category {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.custom-btn {
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  width: 11rem;
+  font-family: Raleway, sans-serifas;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+
+.custom-btn:hover {
+  scale: 105%;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(90, 90, 90, 0.265);
+}
+
+.add {
+  border: 1px solid mediumaquamarine;
+}
+
+.buy {
+  background: mediumaquamarine;
+}
+.buy:hover {
+  color: white;
+}
+
+.cart-wrapper {
+  text-align: right;
+  width: 80vw;
+  margin: 3rem auto;
+}
+
+.cart-body {
+  min-height: 50vh;
+  background: white;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  font-family: montserrat, sans-serif;
+  text-align: left;
+  padding: 0rem 2rem;
+}
+
+.item-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(136, 136, 136, 0.443);
+  margin: 2rem auto;
+}
+
+.bar-img {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.bar-rmv {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.bar-rmv:hover {
+  background: rgba(169, 14, 14, 0.056);
+}
+
+.bar-price {
+  display: flex;
+  align-items: center;
+}
+
+.img-name-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 50%;
+}
+
+.img-name {
+  font-family: Raleway, sans-serif;
+}
+
+.check-out {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+  font-family: raleway, sans-serif;
+  font-size: 1.2rem;
+}
+
+.check-out-btn {
+  background: darkcyan;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.loading {
+  backdrop-filter: blur(1);
+  width: 100%;
+  height: 80vh;
+}
+
+.price-msg {
+  position: fixed;
+  background: white;
+  font-family: raleway;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.144);
+  border-radius: 0.5rem;
+}
