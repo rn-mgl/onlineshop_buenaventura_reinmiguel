@@ -32,7 +32,6 @@ export default function SingleProduct() {
 
   const handleAddToCart = () => {
     const addItem = async () => {
-      setLoading(true);
       try {
         const { data } = await axios.get(`${url}/${productId}`);
         if (data) {
@@ -43,9 +42,7 @@ export default function SingleProduct() {
       } catch (error) {
         console.log(error);
       }
-
       setPrice((prev) => (prev += parseInt(product.price * 58)));
-      setLoading(false);
     };
     addItem();
   };

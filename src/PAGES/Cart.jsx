@@ -15,7 +15,7 @@ export default function Cart() {
   const handleCheckOut = () => {
     setChecked((prev) => !prev);
   };
-  console.log(cart);
+
   return (
     <div className="cart-wrapper">
       <div className="check-out">Items : {cart.length}</div>
@@ -49,9 +49,7 @@ export default function Cart() {
         <div onClick={handleCheckOut} className="check-out-btn">
           Check Out
         </div>
-        <div onClick={handleCheckOut} className={`${checked && "price-msg"}`}>
-          Total : P {price}.00
-        </div>
+        <div onClick={handleCheckOut}>Total : P {checked ? price + ".00" : "---"}</div>
       </div>
     </div>
   );
