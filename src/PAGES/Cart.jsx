@@ -15,7 +15,7 @@ export default function Cart() {
   const handleCheckOut = () => {
     setChecked((prev) => !prev);
   };
-
+  console.log(cart);
   return (
     <div className="cart-wrapper">
       <div className="check-out">Items : {cart.length}</div>
@@ -38,6 +38,7 @@ export default function Cart() {
                 index={index}
                 setSeen={setSeen}
                 id={id}
+                product={id}
                 seen={seen}
               />
             );

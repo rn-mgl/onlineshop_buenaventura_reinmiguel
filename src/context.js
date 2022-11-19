@@ -36,7 +36,16 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ loading, setLoading, products, setProducts, cart, setCart, price, setPrice }}
+      value={{
+        loading,
+        setLoading,
+        products,
+        setProducts,
+        cart,
+        setCart,
+        price,
+        setPrice,
+      }}
     >
       {children}
     </AppContext.Provider>

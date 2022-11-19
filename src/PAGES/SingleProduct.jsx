@@ -31,10 +31,23 @@ export default function SingleProduct() {
   }, [fetchProduct]);
 
   const handleAddToCart = () => {
-    setCart((prev) => {
-      return [...prev, product.id];
-    });
-    setPrice((prev) => (prev += parseInt(product.price * 58)));
+    const addItem = async () => {
+      setLoading(true);
+      try {
+        const { data } = await axios.get(`${url}/${productId}`);
+        if (data) {
+          setCart((prev) => {
+            return [...prev, data];
+          });
+        }
+      } catch (error) {
+        console.log(error);
+      }
+
+      setPrice((prev) => (prev += parseInt(product.price * 58)));
+      setLoading(false);
+    };
+    addItem();
   };
 
   if (loading) {
